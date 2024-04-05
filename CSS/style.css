@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: hsl(0, 0%, 0%);
+    color: #fff;
+    margin: 0;
+    font-family: 'Rowan', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 10;
+    padding: 0;
+}
+header {
+
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+padding: 24px 20px;
+}
+
+header nav ul, footer nav ul {
+display: flex;
+list-style-type: none;
+gap: 16px;
+}
+
+header p {
+  font-weight: bold;  
+}
+
+header nav ul a, footer nav ul a {
+    text-decoration: none;
+    color: #999;
+}
+
+header nav ul a:hover, footer nav ul a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.info {
+    display: grid;
+    max-width: 1120px;
+    margin: auto;
+    padding: 120px 20px;
+    grid-template-columns: 2fr 1fr;
+    gap: ;
+}
+
+.info h1 {
+    font-size: 72px;
+    line-height: 1.1;
+}
+
+.colore-1 {
+    background-color: #333;
+    padding: 120px 20px;
+   
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    gap: 120px;
+}
+
+.container .text {
+    width: 66%;
+}
+
+.container .image {
+    width: 33%;
+}
+
+.container .text h2 {
+font-size: 26px;
+line-height: 1.4;
+margin-bottom: 1.4rem;
+}
+
+.container .text p {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+
+
+footer {
+    display: flex;
+justify-content: space-between;
+padding: 24px 20px;
+font-size: 14px;
+}
+
+@media (max-width:600px) {
+    .info {
+        grid-template-columns: 1fr;
+        gap: 36px; 
+    }
+
+    .info h1 {
+        font-size: 42px;
+    }
+
+    .container .text {
+        width: 100%;
+    }
+    
+    .container .image {
+        width: 100%;
+    }
+
+    .container {
+       flex-direction: column;
+        gap: 36px;
+    }
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    gap: 200px;
+    font-size: 30px;
+    margin-bottom: -50px;
+    margin-left: 5px;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul a:hover {
+    text-decoration-line: underline;
+}
